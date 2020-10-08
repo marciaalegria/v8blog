@@ -1,23 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Articulo from './views/Articulo'
-import Inicio from './views/Inicio'
-import Contacto from './views/Contacto'
+//import Articulo from './views/Articulo'
+//import Inicio from './views/Inicio'
+import Contacto from '../views/Contacto'
 
-import NotFound from './views/NotFound'
+import NotFound from '../views/NotFound'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: Inicio,
+    name: 'Inicio',
     
     component: () => import(/* webpackChunkName: "about" */ '../views/Inicio.vue')
   },
   {
     path: '/articulo',
-    name: Articulo,
+    name: 'Articulo',
     
     component: () => import(/* webpackChunkName: "about" */ '../views/Articulo.vue')
    },
@@ -27,14 +27,14 @@ const routes = [
     },
     {
       path: '/sobremi',
-      name: SobreMi,
-      component: () => import(/* webpackChunkName: "about" */ '../components/Foter.vue')
+      name: 'SobreMi',
+      component: () => import(/* webpackChunkName: "about" */ '@/components/Foter.vue')
       },
       {
         path: '/administrador',
-        name: Administrador,
-        component: () => import(/* webpackChunkName: "admin" */ '../views/Administrador.vue')
-        },
+        name: 'Administrador',
+        component: () => import(/* webpackChunkName: "admin" */ '@/views/Administrador.vue')
+  },
   {
     path: '/contacto',
     component: Contacto
