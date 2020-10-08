@@ -31,5 +31,6 @@ export default new Router({
     path: '/sobremi',
     component: SobreMi
     },
+
     ]
    })

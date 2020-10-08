@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    name: 'footer',
+    name: 'foter',
     // props: {},
     data: function(){
         return {}

@@ -22,16 +22,16 @@
     </div>
 </div>
 <hr>
-<Footer/> 
+<Foter/> 
     </div>
 </template>
 
 <script>
-import Footer from '../components/Footer'
+import Foter from '../components/Foter'
 export default {
     name: 'component-sobremi',
     components: {
-        Footer
+        Foter
     },
     
     // props: {},

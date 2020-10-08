@@ -36,16 +36,16 @@
     </div>
 </div>
 <hr>
-<Footer/>
+<Foter/>
    </div>
 </template>
 
 <script>
-import Footer from '../components/Footer'
+import Foter from '../components/Foter'
 export default {
     name: 'component-contacto',
     components: {
-        Footer
+        Foter
     },
     // props: {},
     data: function(){

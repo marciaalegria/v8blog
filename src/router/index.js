@@ -28,12 +28,12 @@ const routes = [
     {
       path: '/sobremi',
       name: SobreMi,
-      component: () => import(/* webpackChunkName: "about" */ '../components/Footer.vue')
+      component: () => import(/* webpackChunkName: "about" */ '../components/Foter.vue')
       },
       {
         path: '/administrador',
         name: Administrador,
-        component: () => import(/* webpackChunkName: "about" */ '../views/Administrador.vue')
+        component: () => import(/* webpackChunkName: "admin" */ '../views/Administrador.vue')
         },
   {
     path: '/contacto',

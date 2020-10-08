@@ -7,8 +7,8 @@
         <div class="row">
             <div class="col-md-10 col-lg-8 mx-auto">
                 <div class="post-heading">
-                    <h1><strong>Chevrolet presenta la totalmente nueva Blazer</strong></h1>
-                    <h2 class="subheading"><strong>Llega como la primera SUV deportiva de la marca</strong></h2>
+                    <h1><strong>{{ titulo }}</strong></h1>
+                    <h2 class="subheading"><strong>{{ subtitulo }}</strong></h2>
                 </div>
             </div>
         </div>
@@ -31,21 +31,23 @@
         </div>
     </div>
 </article>
-    <Footer/>
+    <Foter/>
     </div>
 </template>
 
 <script>
-import Footer from '../components/Footer'
+import Foter from '../components/Foter'
 export default {
     name: 'component-inicio',
 
     components: {
-        Footer
+        Foter
     },
     // props: {},
     data(){
         return {
+            titulo: 'Chevrolet presenta la totalmente nueva Blazer',
+            subtitulo:'Llega como la primera SUV deportiva de la marca',
             texto_1:'La marca del corbatín ha estado muy activa de novedades este 2019, y acaba de presentar en Chile su primer SUV deportivo, que recobra un conocido nombre de la marca, la Blazer, que ahora llega con mucha más cercanía al diseño y concepto del Camaro que el del todo terreno rudo que fue hace años atrás.',
             texto_2: 'Aterriza en nuestro país en dos versiones, ambas muy equipadas y que solamente varían en su look, o más deportivo o más elegante.&nbsp;La primera es la RS, que ofrece detalles deportivos en negro brillante, incluyendo el tradicional corbatín, mientras que la versión Premier ofrece un look más elegante, con muchos detalles cromados y que recuerda más a otros modelos de la marca. Ambas se ofrecen a un precio de lanzamiento de $29.990.000, incluyendo bonos de lanzamiento y de financiamiento (precio sin bonos es $31.990.000). ',
             texto_3: 'Lo primero que se aprecia es su diseño exterior, que aunque en un tamaño no menor de casi 4.9 metros, se ve bastante atractivo y elegante, con un frontal muy afilado, con una boca muy grande, luces diurnas LED superiores y principales abajo HID con tecnología Intellibeam. El lateral se ve muy estilizado, con sus llantas de 21 pulgadas, y una parte trasera que recuerda a otros modelos emblemáticos del segmento, como la Nissan Murano o Lexus RX. La trasera ofrece un portalón con una buena caída, doble salida de escape y hermosas luces LED con un mini logo de la marca.',
