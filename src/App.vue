@@ -20,8 +20,13 @@
                     </li>
                     <li class="nav-item" role="presentation">
                       <!-- REEMPLAZAR CON ELEMENTO ROUTER LINK A RUTA ESTÁTICA -->
-                      <router-link to="/post/1">último post</router-link> 
+                      <router-link to="/notfound">último post</router-link> 
                     </li>
+                    <li class="nav-item" role="presentation">
+                      <!-- REEMPLAZAR CON ELEMENTO ROUTER LINK A RUTA ESTÁTICA -->
+                      <router-link to="/administrador">Administracion</router-link> 
+                    </li>
+
                     
                 </ul>
         </div>
