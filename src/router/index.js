@@ -1,8 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-//import Articulo from './views/Articulo'
-//import Inicio from './views/Inicio'
-import Contacto from '../views/Contacto'
 
 import NotFound from '../views/NotFound'
 
@@ -37,12 +34,9 @@ const routes = [
   },
   {
     path: '/contacto',
-    component: Contacto
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-  
-  }
+    name: 'Contacto',
+    component: () => import(/* webpackChunkName: "admin" */ '@/views/Contacto.vue')
+},
 ]
 
 const router = new VueRouter({
